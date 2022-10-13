@@ -16,3 +16,7 @@ After the players choose their pokemon the speed stats are checked and the faste
 The damage calculation uses the attack stat of the attacking pokemon and the defence stat of the defending one
 along with a number of other bonuses like a random damage modifier roll of .85-1, a buff of 1.5x increase if the pokemon has the same type as the move,
 and a 1/16 chance to get a critcal hit and do 1.5x damage.
+If the type of the attacking move is super effective on one or both defending pokemon's type it will do 2x or 4x damage. 
+The same for if it is resisted going to 1/2 or 1/4 damage.
+Effectiveness is determined by a function that has a dictionary full of dictionaries for each type with their resistances and weaknesses in it.
+If the defending pokemon has 2 types the dictionary is referenced for each type.
